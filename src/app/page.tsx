@@ -9,7 +9,7 @@ import { MessageCircle } from "lucide-react";
 
 export default function Home() {
   return (
-    <div className="flex bg-gray-50 min-h-screen items-center justify-center">
+    <div className="flex items-center justify-center min-h-screen">
       <Popover>
         <PopoverContent align="start" className="w-[440px] mr-4">
           <Chat />
@@ -17,9 +17,8 @@ export default function Home() {
         <PopoverTrigger asChild className="fixed bottom-4 right-4">
           <Button
             variant="outline"
-            className="rounded-full w-16 h-16 aspect-square bg-black hover:bg-gray-700"
-          >
-            <MessageCircle size={40} className="text-white" />
+            className="w-16 h-16 transition-all duration-300 bg-white rounded-full aspect-square">
+            <MessageCircle size={40} className="text-black " />
           </Button>
         </PopoverTrigger>
       </Popover>
